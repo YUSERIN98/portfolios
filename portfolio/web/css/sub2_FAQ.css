@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+@import url(reset.css);
+@import url(font.css);
+
+body {font-family:'Nanum Gothic', sans-serif;}
+main {width: 1100px; margin: 0 auto;}
+
+/*header영역*/
+header {width:100%; height: 90px; background: #fff; position: fixed; z-index:10;}
+
+
+/*logo영역*/
+header .logo {position: absolute; top:24px; left: 30px; display: block; width: 81px; height: 46px; background: url(../img/logoB.png) no-repeat;}
+
+
+/*gnb영역*/
+header .gnb {text-align: center;}
+header .gnb > ul > li {display: inline-block; margin: 0 40px;}
+header .gnb > ul > li > a {font-size: 18px; font-family:'Roboto', sans-serif; font-weight: 500; color: #000; line-height: 90px;}
+
+/*subMenu영역*/
+header .subMenu {position: absolute; top:90px; left:0; width:100%; height:50px; background:#2261a3; display: none;}
+header .subMenu > li {display: inline-block; margin: 0 40px;}
+header .subMenu > li > a {font-family:'Noto Sans KR', sans-serif; font-weight: 300; color: #fff; line-height: 50px;
+}
+header .gnb > ul > li:hover .subMenu {display: block;}
+header .gnb .subMenu li a:hover {border-bottom: 3px solid rgba(255, 255, 255, 0.65);}
+
+
+/*shop영역*/
+.shop {position: absolute; right: 30px; top:30px;}
+.shop p {font-size: 18px; font-family:'Roboto', sans-serif; font-weight: 400; color: #000;}
+.shop p:before {content: ""; display: inline-block; width:20px; height:20px; background: url(../img/header_cartB.png) no-repeat 0 6px; margin-right:8px;}
+
+/*visual영역*/
+.visual {text-align: center; padding-top:90px; height: 400px;}
+.visual:after {content: ""; position: absolute; top:90px; left:0; right:0; height: 490px; z-index: -1; background: url(../img/bg_visualsub2_FAQ.jpg) no-repeat center;}
+.visual .visual-text {position:relative; top:165px; transform: translateY(100%); animation: visual-textAni 1s 1 both;}
+.visual .visual-text p:nth-of-type(1) {display: inline-block; padding:0 25px 20px; position: relative; color: #fff; font-weight:600; letter-spacing:4px;}
+.visual .visual-text p:nth-of-type(1):after {content: ""; display: block; width: 405px; height: 2px; background: #ffffff; position: absolute; bottom:0; left:0}
+.visual .visual-text .main-title {font-size: 40px; color: #fff; font-weight: 300; margin-top: 40px; position: relative;}
+.visual .visual-text .main-title:before {content: ""; display: inline-block; position: absolute; top: 80px; left: 540px; width: 19px; height: 12px; background: url(../img/bg_down.png) no-repeat; }
+.visual .visual-text .main-title:after {content: ""; display: inline-block; position: absolute; top: 90px; left: 540px; width: 19px; height: 12px; background: url(../img/bg_down.png) no-repeat;}
+.visual .visual-text .main-title span {font-weight: 600;}
+
+@keyframes visual-textAni {
+    0% {transform: translateY(100%);}
+    100% {transform: translateY(0%);}
+}
+
+
+/*contents-FAQ영역*/
+/*스포츠 FAQ*/
+.contents-FAQ {background: #fff; border-top:1px solid #fff;}
+.contents-FAQ .p {text-align: center; margin: 75px 0 50px; position: relative;}
+.contents-FAQ .p:after {content: ""; position: absolute; width: 1100px; height: 2px; top:118px; left: 0; background: #298adb;}
+.contents-FAQ .p p {display: inline-block; padding-bottom: 30px; position: relative; font-size: 30px; color: #343434; font-weight: 300;}
+.contents-FAQ .p p:after {content: ""; position: absolute; left: 120px; bottom: 0; width: 40px; height: 3px; background: #000;}
+.contents-FAQ p span {font-weight: 600;}
+
+/*question*/
+.contents-FAQ .FAQ .question {border-bottom: 1px solid #c6c6c6; cursor: pointer; position: relative; padding: 20px 300px 25px 80px; color: #343434; font-size: 18px; font-weight: 500;}
+.contents-FAQ .FAQ .question span {position: absolute; top: 16px; left: 40px; font-size: 25px; color: #298adb; font-family:'Roboto', sans-serif;}
+.contents-FAQ .FAQ .question:after {content: ""; position: absolute; width:18px; height: 18px; top: 27px; right: 40px; background: url(../img/bg_FAQdown.png) no-repeat;}
+
+
+/*answer*/
+.contents-FAQ .FAQ .answer {position: relative; padding: 20px 50px 25px 80px; color: #717171; font-size: 15px; line-height: 2.8; display: none;}
+.contents-FAQ .FAQ .answer span {position: absolute; top: 5px; left: 40px; font-size: 25px; color: #49494B; font-family:'Roboto', sans-serif;}
+.contents-FAQ .FAQ li:hover .answer {display: block; border-bottom:1px solid #c6c6c6;}
+.contents-FAQ .FAQ li:hover .question {border-bottom: none;}
+
+
+
+
+/*footer-move영역*/
+.move {text-align: center; padding-top:200px }
+.move li {width: 50%; height:168px; float: left;}
+.move li a {display: block; padding-top: 65px; line-height:30px; color: #fff;}
+.move li a strong {font-size: 20px;}
+.move li a p {font-size: 15px; font-weight: 300;}
+.move .campain {background:url(../img/bg_campain.jpg) no-repeat center/cover;}
+.move .pocarigirl {background:url(../img/bg_pocarigirl.jpg) no-repeat center/cover;}
+
+
+
+/*footer영역*/
+.top {height: 320px; background: #282828;}
+.top .list {width:1200px; margin: 0 auto; padding-top: 75px;}
+.top .list > li {position: relative; width:110px; float: left; padding: 0 70px 0 20px;}
+.top .list > li:after {content: ""; position: absolute; top:0; right: 0; display: inline-block; width: 1px; height: 177px; background: rgba(96, 96, 96, 0.42);}
+.top .list > li:last-child:after {display: none;}
+.top .list > li strong {display: inline-block; color: #fff; font-family:'Roboto', sans-serif; font-size:14px; margin-bottom: 25px;}
+.top .list > li ul li {width:150px; font-size: 14px; color: #606060; line-height:26px;}
+.top .list > li ul li a:hover {border-bottom: 1px solid #606060;}
+.top .list > li ul li select {width:115px; height: 40px; background: #1c1c1c; border: none; color: #6a6a6a; text-indent: 8px;}
+
+/*address*/
+address {height: 50px; background: #141414; text-align: center; line-height: 50px; color: #525252; font-family:'Roboto', sans-serif; font-size: 15px; font-weight: 600;}
+

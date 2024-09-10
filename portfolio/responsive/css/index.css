@@ -1,0 +1,189 @@
+@charset "utf-8";
+@import url(font.css);
+
+html {font-size: 10px;}
+body {font-size: 1rem; font-family: 'Nanum Gothic', sans-serif;}
+
+
+.inner {width: 120rem; margin: 0 auto;}
+main {background: url(../img/bg_content.png) no-repeat center/cover;}
+
+/*header1*/
+.header1 {position: relative;}
+.header1:after {content: ""; position: absolute; width: 100%; height: .1rem; left: 0; bottom: -.5rem; background: #ededed;}
+/*top*/
+.top {text-align: right; padding: .5rem 0 0;}
+.top li {display: inline-block; padding-left: 1.2rem; margin-left: .4rem; position:relative; vertical-align: middle}
+.top li a {font-size: 1.1rem; color: #656565;}
+.top li ~ li:before {content:""; position: absolute; top: .2rem; left: 0; width: .1rem; height: 1.1rem; background:#ddd;}
+.top .sns:before {top: 1rem;}
+/*정부혁신*/
+.top li .gover {display: inline-block; width: 6.5rem; height: 3rem; background: url(../img/top_gover.png) no-repeat; margin-right: .5rem;}
+/*트위터*/
+.top li .twiter {display: inline-block; width: 3rem; height: 3rem; background: url(../img/top_twiter.png) no-repeat; margin-right: .5rem;}
+/*인스타그램*/
+.top li .instagram {display: inline-block; width: 3rem; height: 3rem; background: url(../img/top_instagram.png) no-repeat;}
+/*btn_menu*/
+.header1 .inner {position: relative;}
+.header1 .inner .btn_menu {position: absolute; top: 4rem; right: 0; width: 7.8rem; height: 7.8rem; background: url(../img/ico_menu.png) no-repeat;}
+
+/*btn_smallmenu*/
+.btn_smallmenu {position: absolute; top: 1.7rem; right: 1.3rem; width: 2.5rem; height: 1.9rem; background: url(../img/ico_smallmenu.png) no-repeat; display: none; z-index: 50;}
+
+
+
+/*header2*/
+/*점열 애니메이션*/
+@keyframes point {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+/*logo*/
+.header2 .inner h1 {float: left; padding: 1.7rem 0 0;}
+.header2 .inner h1 .logo {display: inline-block; width: 21.8rem; height: 5.3rem; background: url(../img/header_logo.png) no-repeat;}
+/*menu_bar*/
+.menu_bar > li {display: inline-block;}
+.menu_bar > li:first-child {margin-left: 3.5rem;}
+.menu_bar > li > a {display: inline-block; line-height: 8.3rem; padding: 0 3rem; margin-left: -.4rem; font-size: 1.7rem; color: #222; font-weight: 500;}
+.menu_bar > li > a {display: inline-block; line-height: 8.3rem; padding: 0 3rem; margin-left: -.4rem; font-size: 1.7rem; color: #222; font-weight: 500;}
+/*미리보는 창경궁 점열표시*/
+.menu_bar > li .pointPreview {position: relative;}
+.menu_bar > li .pointPreview:after {content: ""; position: absolute; top: .8rem; left: 2rem; width: 2rem; height: 2rem; border-radius: 100%; background: #ffcc33; animation: point infinite 1s alternate;}
+/*subMenu*/
+.menu_bar .subMenu {position: absolute; top: 11.8rem; left: 0; right: 0; height: 23.7rem; z-index: 100; background:#f0f0f0;}
+.menu_bar .subMenu div {width: 120rem; margin: 0 auto;}
+.menu_bar .subMenu div img {float: left;}
+.menu_bar .subMenu div > ul > li {display: inline-block; margin: 3rem .2rem 0 .2rem; position: relative;}
+/*역사 점열표시*/
+.menu_bar .subMenu div > ul > li .history {position: relative;}
+.menu_bar .subMenu div > ul > li .history:after {content: ""; position: absolute; top: 1rem; left: 1rem; width: 1.6rem; height: 1.6rem; border-radius: 100%; background: #ffcc33; animation: point infinite 1s alternate;}
+.menu_bar .subMenu div > ul > li:before {content: ""; position: absolute; top: 2.3rem; left: 1.5rem; width: .6rem; height: .3rem; background:#c03e3e;}
+.menu_bar .subMenu div > ul > li:first-child {margin-left: 3.5rem;}
+.menu_bar .subMenu div > ul > li  > a {display: inline-block; width: 22rem; line-height: 5rem; padding-left: 3rem; box-sizing: border-box; font-size: 1.3rem; color: #612d0b; background: #fff; font-weight: 600;}
+/*subMenu나타내기*/
+.menu_bar .subMenu {display: none;}
+.menu_bar .subMenu div > ul > li:hover > a {color: #fff; background: #c03e3e;}
+.menu_bar .subMenu div > ul > li:hover:before {background: #fff;}
+/*sub2dep*/
+.menu_bar .subMenu .sub2dep {position: absolute; padding: 2rem 3rem; line-height: 2.5rem;}
+.menu_bar .subMenu .sub2dep > li > a {font-size: 1.2rem; color: #5a5c5a; font-weight: 600;}
+/*sub2dep나타내기*/
+.menu_bar .subMenu .sub2dep li:hover > a {color: #c03e3e; border-bottom: .1rem solid #c03e3e;}
+/*//header*/
+
+/*visual영역*/
+.visual {position: relative;}
+.visual .slide1 .swiper-wrapper .swiper-slide {height: 54.6rem; background: url(../img/bg_visual01.jpg) no-repeat;}
+.visual .slide1 .swiper-wrapper .visual02 {background-image: url(../img/bg_visual02.jpg);}
+.visual .slide1 .swiper-wrapper .visual03 {background-image: url(../img/bg_visual03.jpg);}
+.visual .slide1 .swiper-wrapper .visual04 {background-image: url(../img/bg_visual04.jpg);}
+/*pagenation*/
+.visual .slide1 .paging {position: absolute; top: 65%; left: 50%; transform: translate(-50%,-50%); width: 16rem; line-height: 3rem; border-radius: 3rem; text-align: center; z-index: 20; background: rgba(0, 0, 0, 0.43)}
+.visual .slide1 .paging span {display: inline-block; width: 1rem; height: 1rem; border-radius: 1rem; background: #858382; margin: 0 .5rem; transition: all .3s;}
+.visual .slide1 .paging span.active {width: 3rem; background: #fff;}
+/*visual-text*/
+.visual .visual-text {position: absolute; top: 30%; left: 0; right: 0; transform: translate(0,-30%); text-align: center;}
+.visual .visual-text h2 span {display: inline-block; padding: 0 5rem; line-height: 10rem; border:.3rem solid #fff; color: #fff; font-size: 3.8rem; font-family: 'Nanum Myeongjo', serif;}
+.visual .visual-text > span {display: inline-block; padding: 2.5rem 4.4rem 1.5rem; font-size: 1.6rem; color: #fff; position: relative; font-weight: 600;}
+.visual .visual-text > span:before {content:""; position: absolute; left: 0; bottom: 2.5rem; width: 2.8rem; height: .2rem; background: #fff;}
+.visual .visual-text > span:after {content:""; position: absolute; right: 0; bottom: 2.5rem; width: 2.8rem; height: .2rem; background: #fff;}
+.visual .visual-text p {font-size: 1.7rem; color: #fff; font-weight: 600; line-height: 1.7;}
+/*caleder*/
+.calender {position: absolute; height: 13rem; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.76); z-index: 50;}
+.calender .wrap {text-align: center; color: #fff; position: relative; padding: 1.5rem 0 0;}
+.calender .wrap p {position: absolute; top: 2rem; left: 0; font-size: 1.6rem;}
+.calender .wrap p:before {content: ""; display: inline-block; width: 2.1rem; height: 2.1rem; background: url(../img/calender.png) no-repeat; vertical-align: -.45rem; margin-right: .5rem;}
+/*month*/
+/*버튼이랑 달*/
+.calender .wrap .month .prev {width: 2.5rem; height: 1.3rem; background: url(../img/calender_prev.png) no-repeat; margin-right: 1rem;}
+.calender .wrap .month .next {width: 2.5rem; height: 1.3rem; background: url(../img/calender_next.png) no-repeat; margin-left: .5rem;}
+.calender .wrap .month strong {font-size: 1.6rem;}
+.calender .wrap .month strong span {display: inline-block; line-height: 3.2rem; padding: 0 .9rem; background: #c03e3e;}
+/*date*/
+.calender .wrap .date {padding: 2rem 0 0; position: relative;}
+.calender .wrap .date:before {content: ""; position: absolute; top: 1rem; left: 0; width: 100%; height: .1rem; background: rgba(255, 255, 255, 0.25);}
+.calender .wrap .date a {display: inline-block; width:1.5rem; line-height: 3rem; padding: 0 1rem; margin-left: -.35rem; font-size: 1.2rem; font-weight: 600;}
+.calender .wrap .date .sunday {color: #c03e3e;}
+.calender .wrap .date .today {border-radius: 100%; background:#c03e3e;}
+
+/*guide영역*/
+.guide {padding: 3rem 0 0;}
+.guide .guide-list {display: flex;}
+.guide .guide-list li {flex: 1; position: relative;}
+.guide .guide-list .time a {background: #b15e58;}
+.guide .guide-list .rule a {background: #e9bc65;}
+.guide .guide-list .use a {background: #888;}
+.guide .guide-list .way a {background: #21938a;}
+.guide .guide-list li a {display: inline-block; width: 100%; height: 20rem; padding: 4rem 3rem 2.5rem; box-sizing: border-box;}
+/*guide 안에텍스트*/
+.guide .guide-list li a strong {display: inline-block; font-size: 2rem; color: #fff; padding: 0 0 1.7rem;}
+.guide .guide-list li a strong:after {content: ""; display: inline-block; width: 2.4rem; height: 2.2rem; background: url(../img/notice_enter.png) no-repeat;}
+.guide .guide-list li a .brown:after {background-image: url(../img/notice_enterb.png);}
+.guide .guide-list li a p {font-size: 1.3rem; color: #fff; font-weight: 600; line-height: 1.5;}
+.guide .guide-list li a p span {display: block;}
+/*rule만 갈색*/
+.guide .guide-list .rule strong {color: #3b2327;}
+.guide .guide-list .rule p {color:#3b2327;}
+/*하단 아이콘*/
+.guide .guide-list li a:after {content: ""; position: absolute; width: 5.6rem; height: 5.6rem; right: 3rem; bottom: 2rem; background: url(../img/guide_ico1.png) no-repeat;}
+.guide .guide-list .rule a:after {width: 5.1rem; height: 5.8rem; background-image: url(../img/guide_ico2.png);}
+.guide .guide-list .use a:after {width: 6.4rem; height: 6.4rem; background-image: url(../img/guide_ico3.png);}
+.guide .guide-list .way a:after {width: 5rem; height: 6rem; background-image: url(../img/guide_ico4.png);}
+/*guide-list마우스 올렸을때*/
+
+/*notice영역*/
+.notice .notice-box {display: flex;}
+.notice .notice-box h2 {padding: 3.5rem 0 2.5rem; font-size: 2rem; font-weight: 600; color: #555;}
+/*news*/
+.notice .notice-box .news {flex: 1;}
+.notice .notice-box .news ul li {position: relative; border-bottom: .1rem solid #d2d2d2;}
+.notice .notice-box .news ul li a {background: #fff; display: inline-block; width: 100%; height: 8.3rem; padding: 2.5rem 0 0 10rem; box-sizing: border-box;}
+.notice .notice-box .news ul li a > strong {font-size: 1.3rem;}
+.notice .notice-box .news ul li .day {position: absolute; top:2.4rem; left: 3rem;}
+.notice .notice-box .news ul li .day strong {font-size: 2rem; color: #48649f; font-weight: 600; padding-left: .6rem;}
+.notice .notice-box .news ul li .day span {font-size: 1rem; color: #5e6368; display: block; font-weight: 600;}
+/*board*/
+.notice .notice-box .board {margin-left: 1rem;}
+
+/*addInfo영역*/
+.addInfo {padding: 3rem 0 3rem;}
+.addInfo .addInfo-list {display: flex;}
+.addInfo .addInfo-list li {flex: 1; text-align: center; }
+.addInfo .addInfo-list li~li {border-left: .1rem solid #e0e1e4;}
+.addInfo .addInfo-list li a {background: #fff; display: inline-block; width: 100%; height: 20rem; padding: 9rem 3rem 3rem 3rem; box-sizing: border-box; position: relative;}
+.addInfo .addInfo-list li a:before {content: ""; position: absolute; top: 1rem; left: 36%; width: 8rem; height: 8rem; background: url(../img/otherinfo01.png) no-repeat;}
+.addInfo .addInfo-list li .list2:before {background-image: url(../img/otherinfo02.png);}
+.addInfo .addInfo-list li .list3:before {background-image: url(../img/otherinfo03.png);}
+.addInfo .addInfo-list li .list4:before {background-image: url(../img/otherinfo04.png);}
+/*strong*/
+.addInfo .addInfo-list li a strong {display: inline-block; font-size: 2rem; color: #737373; padding: 0 0 1.8rem;}
+.addInfo .addInfo-list li a strong span {color: #000;}
+/*p*/
+.addInfo .addInfo-list li a p {font-size: 1rem; line-height: 1.7; color: #747474; font-weight: 600;}
+
+
+/*banner영역*/
+.banner {height: 10.7rem; background: rgba(0, 0, 0, 0.27);}
+.banner .bannerSwiper .swiperBanner {padding: 3rem 0 0;}
+
+/*footer영역*/
+/*topf*/
+footer .topf {background: #929398; line-height: 5rem;}
+footer .topf .box {display: flex;}
+footer .topf .box .box1 {flex: 1; background: #77787f;}
+footer .topf .box .box1 ul li {float: left; position: relative;}
+footer .topf .box .box1 ul li ~ li:before {content: ""; position: absolute; top: 1.7rem; left: 0; width: .1rem; height: 1.5rem; background: #a5a7ac;}
+footer .topf .box .box1 ul li a {display: inline-block; padding: 0 3rem; font-size: 1.3rem; color: #fff; font-weight: 500;}
+footer .topf .box .box2 {flex: none; width: 27.5rem; background: #5b5b61; text-align: center;}
+footer .topf .box .box2 a {font-size: 1.4rem; color: #fff; display: inline-block; width: 100%;}
+footer .topf .box .box2 a:before {content: ""; display: inline-block; width: 2.7rem; height: 1.8rem; background: url(../img/ico_consult.png) no-repeat; vertical-align: -.4rem; margin-right: .4rem;}
+/*underf*/
+.underf {padding: 3rem 0 2.5rem;}
+.underf .inner {position: relative;}
+.underf .footer_logo {position: absolute; top: .3rem; left: 0; width: 16.2rem; height: 3.8rem; background: url(../img/footer_logo.png) no-repeat;}
+.underf address {padding-left: 20rem;}
+.underf address strong {font-size: 1.3rem; color: #4b4b4b;}
+.underf address strong a {vertical-align: -1rem;}
+.underf address > span {font-size: 1.3rem; color: #717171; display: block;}
+
+

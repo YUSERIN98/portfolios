@@ -1,0 +1,204 @@
+@charset "utf-8";
+@import url(font.css);
+
+html {font-size: 10px;}
+body {font-size: 1rem; font-family: 'Nanum Gothic', sans-serif;}
+
+
+.inner {width: 120rem; margin: 0 auto;}
+
+
+/*header1*/
+.header1 {position: relative;}
+.header1:after {content: ""; position: absolute; width: 100%; height: .1rem; left: 0; bottom: -.5rem; background: #ededed;}
+/*top*/
+.top {text-align: right; padding: .5rem 0 0;}
+.top li {display: inline-block; padding-left: 1.2rem; margin-left: .4rem; position:relative; vertical-align: middle}
+.top li a {font-size: 1.1rem; color: #656565;}
+.top li ~ li:before {content:""; position: absolute; top: .2rem; left: 0; width: .1rem; height: 1.1rem; background:#ddd;}
+.top .sns:before {top: 1rem;}
+/*정부혁신*/
+.top li .gover {display: inline-block; width: 6.5rem; height: 3rem; background: url(../img/top_gover.png) no-repeat; margin-right: .5rem;}
+/*트위터*/
+.top li .twiter {display: inline-block; width: 3rem; height: 3rem; background: url(../img/top_twiter.png) no-repeat; margin-right: .5rem;}
+/*인스타그램*/
+.top li .instagram {display: inline-block; width: 3rem; height: 3rem; background: url(../img/top_instagram.png) no-repeat;}
+/*btn_menu*/
+.header1 .inner {position: relative;}
+.header1 .inner .btn_menu {position: absolute; top: 4rem; right: 0; width: 7.8rem; height: 7.8rem; background: url(../img/ico_menu.png) no-repeat;}
+
+/*btn_smallmenu*/
+.btn_smallmenu {position: absolute; top: 1.7rem; right: 1.3rem; width: 2.5rem; height: 1.9rem; background: url(../img/ico_smallmenu.png) no-repeat; display: none; z-index: 50;}
+
+
+/*header2*/
+/*logo*/
+.header2 .inner h1 {float: left; padding: 1.7rem 0 0;}
+.header2 .inner h1 .logo {display: inline-block; width: 21.8rem; height: 5.3rem; background: url(../img/header_logo.png) no-repeat;}
+/*menu_bar*/
+.menu_bar > li {display: inline-block;}
+.menu_bar > li:first-child {margin-left: 3.5rem;}
+.menu_bar > li > a {display: inline-block; line-height: 8.3rem; padding: 0 3rem; margin-left: -.4rem; font-size: 1.7rem; color: #222; font-weight: 500;}
+.menu_bar > li > a {display: inline-block; line-height: 8.3rem; padding: 0 3rem; margin-left: -.4rem; font-size: 1.7rem; color: #222; font-weight: 500;}
+/*subMenu*/
+.menu_bar .subMenu {position: absolute; top: 11.8rem; left: 0; right: 0; height: 23.7rem; z-index: 100; background:#f0f0f0;}
+.menu_bar .subMenu div {width: 120rem; margin: 0 auto;}
+.menu_bar .subMenu div img {float: left;}
+.menu_bar .subMenu div > ul > li {display: inline-block; margin: 3rem .2rem 0 .2rem; position: relative;}
+.menu_bar .subMenu div > ul > li:before {content: ""; position: absolute; top: 2.3rem; left: 1.5rem; width: .6rem; height: .3rem; background:#c03e3e; }
+.menu_bar .subMenu div > ul > li:first-child {margin-left: 3.5rem;}
+.menu_bar .subMenu div > ul > li  > a {display: inline-block; width: 22rem; line-height: 5rem; padding-left: 3rem; box-sizing: border-box; font-size: 1.3rem; color: #612d0b; background: #fff; font-weight: 600;}
+/*subMenu나타내기*/
+.menu_bar .subMenu {display: none;}
+.menu_bar .subMenu div > ul > li:hover > a {color: #fff; background: #c03e3e;}
+.menu_bar .subMenu div > ul > li:hover:before {background: #fff;}
+/*sub2dep*/
+.menu_bar .subMenu .sub2dep {position: absolute; padding: 2rem 3rem; line-height: 2.5rem;}
+.menu_bar .subMenu .sub2dep > li > a {font-size: 1.2rem; color: #5a5c5a; font-weight: 600;}
+/*sub2dep나타내기*/
+.menu_bar .subMenu .sub2dep li:hover > a {color: #c03e3e; border-bottom: .1rem solid #c03e3e;}
+/*//header*/
+
+/*visual영역*/
+.visual {height: 17.5rem; background: url(../img/bg_visual-history.jpg) no-repeat; position: relative;}
+.visual .visual-text {position: absolute; top: 50%; left: 0; right: 0; transform: translate(0,-50%); text-align: center; color: #fff;}
+.visual .visual-text h2 span {display: inline-block; padding-bottom: 1.6rem; font-size: 3.6rem; font-family: 'Nanum Myeongjo', serif; position: relative;}
+.visual .visual-text h2 span:after {content: ""; position: absolute;  left: 40%; bottom: .8rem; display: inline-block; width: 4.5rem; height: .2rem; background: #fff;}
+.visual .visual-text ul li {display: inline-block;}
+.visual .visual-text ul li~li:before {content: ""; display: inline-block; width: 1rem; height: 1rem; margin-right: 1rem; background: url(../img/next.png) no-repeat;}
+.visual .visual-text ul li a {font-size: 1.3rem;}
+.visual .visual-text ul li .home:before {content: ""; display: inline-block; width: 1.5rem; height: 1.5rem; background: url(../img/home.png) no-repeat; margin-right: .7rem; vertical-align: -.12rem;}
+
+/*contents영역*/
+/*preview-content*/
+.preview-content {display: flex;}
+/*tab-box*/
+.preview-content .tab-box {width: 24rem; border-left: .1rem solid #ddd; border-right: .1rem solid #ddd;}
+.preview-content .tab-box .title {background:url(../img/bg_list-title.jpg) no-repeat;line-height: 13.5rem; text-align: center; color: #fff; font-size: 2.5rem;}
+.preview-content .tab-box .tab button {background: #fff; width: 100%; text-align: left; line-height: 5rem; font-size: 1.5rem; padding-left: 1.8rem; font-weight: 600; color: #741316; border-bottom: .1rem solid #ddd;}
+.preview-content .tab-box .active button {color: #fff; background: #741316;}
+/*점열 애니메이션*/
+@keyframes point {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+/*메뉴 탭버튼 점열표시*/
+/*first*/
+.preview-content .tab-box .tab .first {position: relative;}
+.preview-content .tab-box .tab .first:after {content: ""; position: absolute; top: 1rem; left: 5.5rem; width: 2rem; height: 2rem; background: #ffcc33; border-radius: 100%; animation: point infinite 1s alternate;}
+/*last*/
+.preview-content .tab-box .tab .last {position: relative;}
+.preview-content .tab-box .tab .last:after {content: ""; position: absolute; top: 1rem; left: 13.2rem; width: 2rem; height: 2rem; background: #ffcc33; border-radius: 100%; animation: point infinite 1s alternate;}
+
+/*content*/
+.preview-content .content {flex: 1; padding-left: 4.5rem; display: none;}
+.preview-content .on {display: block;}
+.preview-content .content > div:first-child {padding: 4.8rem 0 7.5rem;}
+.preview-content .content div h3 {font-size: 2.8rem; font-weight: 600; display: inline-block;}
+.preview-content .content div .function {float: right;}
+.preview-content .content div .function .print {width: 3.7rem; height: 3.7rem; background: url(../img/btn_print.png) no-repeat;}
+.preview-content .content div .function .read {display: inline-block; width: 3.7rem; height: 3.7rem; background: url(../img/btn_viewer.png) no-repeat;}
+/*소개*/
+.content > p {font-size: 1.3rem; color: #555; font-weight: 600;}
+.content .t2 {padding: 3rem 0 3rem;}
+.content dl {padding: 0 0 3.5rem;}
+.content dl:nth-of-type(3) {padding: 0 0 9rem;}
+/*dt*/
+.content dl dt {padding: 0 0 2rem; font-size: 1.5rem; color: #152c77; font-weight: 600;}
+.content dl dt:before {content: ""; display:inline-block; width: 1.9rem; height: 2rem; background: url(../img/ico_play.png) no-repeat; vertical-align: -.5rem; margin-right: .4rem;}
+/*dd*/
+.content dl dd {padding-left: 2rem; font-size: 1.3rem; line-height: 1.7; color: #555; font-weight: 600;}
+.content dl dd:before {content: ""; display: inline-block; width: .5rem; height: .1rem; background: #555; vertical-align: .5rem; margin-right: .5rem;}
+
+
+
+/*역사*/
+/*table*/
+table {border-top: .2rem solid #535a75; margin: 0 0 8.3rem;}
+table tr {line-height: 4.2rem; border-bottom: .1rem solid #d5d5db;}
+table th {border-right:.1rem solid #d5d5db; font-size: 1.5rem; color: #103581;}
+table .bn {border: none;}
+table td {font-size: 1.5rem; color: #6a5f5a; font-weight: 600; padding-left: 1.5rem;}
+
+
+/*창경궁 미리보기*/
+/*info-txt*/
+.content .info-txt {line-height: 5.3rem; border: .1rem solid #dbdbdb; background: #f4f6f8; padding: 0 1rem;}
+.content .info-txt strong {font-size: 1.3rem; color: #555;}
+.content .info-txt strong:before {content: ""; display: inline-block; width: 2.8rem; height: 2.8rem; background: url(../img/ico_info-txt.png) no-repeat; vertical-align: -.9rem}
+/*map-box*/
+.content .map-box {padding: 3.5rem 0 2.5rem; position: relative; height: 48rem}
+/*number*/
+.content .map-box .number ol {width: 64rem; display: flex; flex-wrap: wrap; line-height: 3rem; position: absolute; top:30rem; right: 0;}
+.content .map-box .number ol li {width: 16rem;}
+.content .map-box .number ol .wp {width: 32rem;}
+.content .map-box .number ol li button {width: 100%; text-align: left; color: #6b6d6b; font-weight: 600; font-size: 1.4rem; background: none;}
+.content .map-box .number ol li button span {margin-right: 1rem; display: inline-block;background: #ededed; width: 2.6rem; line-height: 2.6rem; text-align: center; border-radius: 100%; color: #a92c5a;}
+/*explain*/
+.explain {padding: 0 0 11.2rem;}
+.explain strong {font-size: 1.6rem; color: #152c77; padding: 0 0 .8rem; display: block;}
+.explain strong:before {content: ""; display: inline-block; width: 1.9rem; height: 2rem; background: url(../img/ico_play.png) no-repeat; vertical-align: -.4rem;}
+.explain img {float: left;}
+.explain p {padding-left: 22rem; font-size: 1.3rem; color: #555; font-weight: 600; line-height: 1.5;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*satisfy*/
+.satisfy {margin: 0 0 3rem; border: .1rem solid #e2e2e2; line-height: 5.5rem; padding: 0 1rem; position: relative;}
+.satisfy strong {position: absolute; top: 0; left: 1rem; font-size: 1.3rem; color: #555;}
+.satisfy strong:before {content: ""; display: inline-block; width: 2.8rem; height: 2.9rem; background: url(../img/ico_satisfy.png) no-repeat; vertical-align: -.9rem;}
+.satisfy .choice {text-align: right;}
+.satisfy .choice input[type="radio"] {vertical-align: -.14rem;}
+.satisfy .choice label {font-size: 1.3rem; color: #6a6a6a;}
+.satisfy .choice button {margin-left: 2rem; line-height: 3.4rem; width: 6.6rem; background: #51576e; color: #fff;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer영역*/
+/*topf*/
+footer .topf {background: #929398; line-height: 5rem;}
+footer .topf .box {display: flex;}
+footer .topf .box .box1 {flex: 1; background: #77787f;}
+footer .topf .box .box1 ul li {float: left; position: relative;}
+footer .topf .box .box1 ul li ~ li:before {content: ""; position: absolute; top: 1.7rem; left: 0; width: .1rem; height: 1.5rem; background: #a5a7ac;}
+footer .topf .box .box1 ul li a {display: inline-block; padding: 0 3rem; font-size: 1.3rem; color: #fff; font-weight: 500;}
+footer .topf .box .box2 {flex: none; width: 27.5rem; background: #5b5b61; text-align: center;}
+footer .topf .box .box2 a {font-size: 1.4rem; color: #fff; display: inline-block; width: 100%;}
+footer .topf .box .box2 a:before {content: ""; display: inline-block; width: 2.7rem; height: 1.8rem; background: url(../img/ico_consult.png) no-repeat; vertical-align: -.4rem; margin-right: .4rem;}
+/*underf*/
+.underf {padding: 3rem 0 2.5rem;}
+.underf .inner {position: relative;}
+.underf .footer_logo {position: absolute; top: .3rem; left: 0; width: 16.2rem; height: 3.8rem; background: url(../img/footer_logo.png) no-repeat;}
+.underf address {padding-left: 20rem;}
+.underf address strong {font-size: 1.3rem; color: #4b4b4b;}
+.underf address strong a {vertical-align: -1rem;}
+.underf address > span {font-size: 1.3rem; color: #717171; display: block;}
+
+

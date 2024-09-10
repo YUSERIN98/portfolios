@@ -1,0 +1,209 @@
+@charset "utf-8";
+
+@import url(reset.css);
+@import url(font.css);
+
+body {font-family:'Nanum Gothic', sans-serif;}
+main {width: 1100px; margin: 0 auto;}
+
+/*header영역*/
+header {width:100%; height: 90px; background: #fff; position: fixed; z-index:10;}
+
+
+/*logo영역*/
+header .logo {position: absolute; top:24px; left: 30px; display: block; width: 81px; height: 46px; background: url(../img/logoB.png) no-repeat;}
+
+
+/*gnb영역*/
+header .gnb {text-align: center;}
+header .gnb > ul > li {display: inline-block; margin: 0 40px;}
+header .gnb > ul > li > a {font-size: 18px; font-family:'Roboto', sans-serif; font-weight: 500; color: #000; line-height: 90px;}
+
+/*subMenu영역*/
+header .subMenu {position: absolute; top:90px; left:0; width:100%; height:50px; background:#2261a3; display: none;}
+header .subMenu > li {display: inline-block; margin: 0 40px;}
+header .subMenu > li > a {font-family:'Noto Sans KR', sans-serif; font-weight: 300; color: #fff; line-height: 50px;
+}
+header .gnb .subMenu li a:hover {border-bottom: 3px solid rgba(255, 255, 255, 0.65);}
+
+
+/*shop영역*/
+.shop {position: absolute; right: 30px; top:30px;}
+.shop p {font-size: 18px; font-family:'Roboto', sans-serif; font-weight: 400; color: #000;}
+.shop p:before {content: ""; display: inline-block; width:20px; height:20px; background: url(../img/header_cartB.png) no-repeat 0 6px; margin-right:8px;}
+
+/*visual영역*/
+.visual {text-align: center; padding-top:90px; height: 400px;}
+.visual .visual-text {position: relative; top: 165px; transform: translateY(100%); animation: visual-textAni 1s 1 both;}
+/*visual sub4_story*/
+.sub4_story:after {content: ""; position: absolute; top:90px; left:0; right:0; height: 490px; z-index: -1; background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.1)),url(../img/bg_visualsub4_story.jpg) no-repeat center;}
+/*visual sub2_FAQ*/
+.sub2_FAQ:after {content: ""; position: absolute; top:90px; left:0; right:0; height: 490px; z-index: -1; background:url(../img/bg_visualsub2_FAQ.jpg) no-repeat center;}
+/*visual sub4_social*/
+.sub4_social:after {content: ""; position: absolute; top:90px; left:0; right:0; height: 490px; z-index: -1; background:url(../img/bg_visualsub4_social.jpg) no-repeat center;}
+.visual .visual-text p:first-child {display: inline-block; padding:0 25px 20px; position: relative; color: #fff; font-weight: 600; letter-spacing: 4px;}
+/*sub4_story:after*/
+.visual .visual-text .story:after {content: ""; display: block; width: 380px; height: 2px; background: #ffffff; position: absolute; bottom:0; left:0;}
+/*sub2_FAQ:after*/
+.visual .visual-text .FAQ:after {content: ""; display: block; width: 402px; height: 2px; background: #ffffff; position: absolute; bottom:0; left:0;}
+/*sub4_social:after*/
+.visual .visual-text .social:after {content: ""; display: block; width: 355px; height: 2px; background: #ffffff; position: absolute; bottom:0; left:0;}
+.visual .visual-text .main-title {font-size: 40px; color: #fff; font-weight: 300; margin-top: 40px; position: relative;}
+.visual .visual-text .main-title:before {content: ""; display: inline-block; position: absolute; top: 80px; left: 540px; width: 19px; height: 12px; background: url(../img/bg_down.png) no-repeat; }
+.visual .visual-text .main-title:after {content: ""; display: inline-block; position: absolute; top: 90px; left: 540px; width: 19px; height: 12px; background: url(../img/bg_down.png) no-repeat;}
+.visual .visual-text .main-title span {font-weight: 600;}
+
+
+@keyframes visual-textAni {
+    0% {transform: translateY(100%);}
+    100% {transform: translateY(0%);}
+}
+
+
+
+
+
+
+/*sub4_story*/
+/*contents_main-contents영역*/
+.contents {background: #fff; border-top:1px solid #fff;}
+.contents .main-contents {width: 1042px; height: 365px; margin: 30px auto 45px; position: relative;
+background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.3)),url(../img/bg_maincontents01.jpg) no-repeat center/cover;}
+.contents .main-contents .contents-title {position: absolute; top:70px; right: 100px;}
+.contents .main-contents .contents-title p:first-child {font-size:18px; color: #fff;}
+.contents .main-contents .contents-title strong {display: inline-block; padding: 30px 0 20px; color: #fff; font-size:26px;}
+.contents .main-contents .contents-title p:nth-child(3) {font-size: 14px; color: rgba(255, 255, 255, 0.69); padding-bottom: 30px;}
+.contents .main-contents .contents-title a {color: #ffc118; font-family: 'Roboto', sans-serif; font-weight: 300;}
+.contents .main-contents .contents-title a:after {content: '\f054'; font-family: 'Font Awesome 5 Free'; font-weight: 600; margin-left:10px;}
+
+
+/*contents_list-contents영역*/
+/*box*/
+.list-contents {position: relative;}
+.list-contents .box {margin-bottom: 40px;}
+.list-contents .box p {color: #444444; font-size: 18px; display: inline-block;}
+.list-contents .box p span {color: #298adb;}
+.list-contents .box .form {float: right;}
+.list-contents .box .form select {width: 90px; height: 30px; border: 1px solid #000; color: #000;}
+.list-contents .box .form input[type="search"] {width: 160px; height: 30px;
+border: 1px solid #222;}
+.list-contents .box .form button {width: 30px; height: 30px; background:url(../img/bg_search.png); position: absolute; top:0; right: 0;}
+
+/*list*/
+.contents .list-contents .list li {width: 294px; height:488px; margin: 0 45px 60px 0; float: left; padding:40px 20px; background: #fafafa; border: 1px solid #cecece;}
+.contents .list-contents .list li:nth-child(3n) {margin-right: 0;}
+.contents .list-contents .list strong {font-size: 16px; font-family:'Roboto', sans-serif; color: #298adb;}
+.contents .list-contents .list li a > p {padding: 15px 0 25px; color: #2e2e2e; font-family:'Noto Sans KR' , sans-serif; font-weight: 600;}
+.contents .list-contents .list .center {text-align: center;}
+.contents .list-contents .list .center p:first-child {padding-top: 25px; color: #515151; font-weight: 800;}
+.contents .list-contents .list .center span {font-size: 13px; color:#9c9c9c; }
+.contents .list-contents .list .center p:last-child {font-size:13px; color:#c1c1c1; padding-top: 5px;}
+
+/*sub2_FAQ*/
+/*contents-FAQ*/
+/*스포츠 FAQ*/
+.contents-FAQ {background: #fff; border-top:1px solid #fff;}
+.contents-FAQ .p {text-align: center; margin: 75px 0 50px; position: relative;}
+.contents-FAQ .p:after {content: ""; position: absolute; width: 1100px; height: 2px; top:118px; left: 0; background: #298adb;}
+.contents-FAQ .p p {display: inline-block; padding-bottom: 30px; position: relative; font-size: 30px; color: #343434; font-weight: 300;}
+.contents-FAQ .p p:after {content: ""; position: absolute; left: 120px; bottom: 0; width: 40px; height: 3px; background: #000;}
+.contents-FAQ p span {font-weight: 600;}
+
+/*faq점열표시*/
+.contents-FAQ .FAQ .example {position: relative;}
+.contents-FAQ .FAQ .example:after {content: ""; position: absolute; top: 20px; left:10px; width: 20px; height: 20px; border-radius: 100%; background: #ffcc33; animation: point infinite 1s alternate;}
+/*점열 애니메이션*/
+@keyframes point {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/*question*/
+.contents-FAQ .FAQ .question {border-bottom: 1px solid rgb(237, 237, 237); cursor: pointer; position: relative; padding: 20px 300px 25px 80px; color: #343434; font-size: 18px; font-weight: 500;}
+.contents-FAQ .FAQ .question span {position: absolute; top: 16px; left: 40px; font-size: 25px; color: #298adb; font-family:'Roboto', sans-serif;}
+.contents-FAQ .FAQ .question:after {content: ""; position: absolute; width:18px; height: 18px; top: 27px; right: 40px; background: url(../img/bg_FAQdown.png) no-repeat;}
+
+
+/*answer*/
+.contents-FAQ .FAQ .answer {position: relative; border-bottom: 1px solid #d8d8d8; padding: 20px 50px 25px 80px; color: #717171; font-size: 15px; line-height: 2.8; display: none;}
+.contents-FAQ .FAQ .answer span {position: absolute; top: 5px; left: 40px; font-size: 25px; color: #49494B; font-family:'Roboto', sans-serif;}
+.contents-FAQ .FAQ li:hover .answer {display: none;}
+
+
+
+
+/*sub4_social*/
+/*contents-snsLive영역*/
+/*포카리스웨트 SNS&LIVE*/
+.contents-snsLive {background: #fff; border:1px solid #fff;}
+.contents-snsLive .p {margin: 75px 0 50px; text-align: center;}
+.contents-snsLive .p p {display: inline-block; padding-bottom: 30px; position: relative; font-size: 30px; color: #343434; font-weight: 300;}
+.contents-snsLive .p p:after {position: absolute; content: ""; left: 200px; bottom: 0; width: 40px; height: 3px; background: #000;}
+.contents-snsLive .p p span:first-child {font-size: 14px; color: #298adb; font-weight: 300; padding: 5px 10px; border: 1px solid #298adb; border-radius: 15px; vertical-align: 7px;}
+.contents-snsLive .p p span:last-child {font-weight: 900;}
+/*sns*/
+.contents-snsLive .sns {width: 247px; margin: 0 auto 75px;}
+.contents-snsLive .sns li {width: 29.75px; height: 30px; padding: 0 16px; float: left; position: relative;}
+.contents-snsLive .sns li:after {content: ""; position: absolute; top: 5px; right: 0; width: 2px; height: 20px; background:#d4d4d4;}
+.contents-snsLive .sns li:last-child:after {display: none;}
+.contents-snsLive .sns li .all {display: inline-block; width:30px; height: 30px; background: url(../img/ico_all.png) no-repeat;}
+.contents-snsLive .sns li .facebook {display: inline-block; width:30px; height: 30px; background: url(../img/ico_facebook.png) no-repeat;}
+.contents-snsLive .sns li .instagram {display: inline-block; width:30px; height: 30px; background: url(../img/ico_instagram.png) no-repeat;}
+.contents-snsLive .sns li .youtube {display: inline-block; width:30px; height: 30px; background: url(../img/ico_youtube.png) no-repeat;}
+/*social-list*/
+.contents-snsLive .social-list li {width: 344px; margin: 0 33px 72px 0; float: left;}
+.contents-snsLive .social-list li:nth-child(3n) {margin-right: 0;}
+.contents-snsLive .social-list li a .img {width: 344px; height:343px; overflow: hidden;}
+.contents-snsLive .social-list li a img {transition: all .3s; width: 344px; height:343px;}
+.contents-snsLive .social-list li a img:hover {transform: scale(1.2);}
+.contents-snsLive .social-list li a .text .insta {display: inline-block; margin: 23px 0 15px; padding: 10px 15px; font-size: 14px; color: #fff; background: #b11d72; border-radius: 30px;}
+.contents-snsLive .social-list li a .text .line {line-height: 25px;}
+.contents-snsLive .social-list li a .text .line p {color: #444;}
+.contents-snsLive .social-list li a .text .line span {color: #298adb; font-weight: 500;}
+
+
+
+/*btn_more*/
+.box-more {text-align: center;}
+.box-more .btn_more {display: inline-block; width: 96px; height: 96px; border: 1px solid #000;}
+.box-more .btn_more p {padding-top: 62px; font-size: 14px; font-weight: 300; position: relative;}
+.box-more .btn_more p:before {content: ""; display:block; position: absolute; top:20px; left: 34px; width:25px; height: 25px; background: url(../img/bg_btn-more.jpg) no-repeat;}
+.box-more .btn_more p span {color: #ed4040;}
+
+
+
+/*footer-move영역*/
+/*sub4_story*/
+.move {text-align: center; padding-top:200px }
+.move li {width: 50%; height:168px; float: left;}
+.move li a {display: block; padding-top: 65px; line-height:30px; color: #fff;}
+.move li a strong {font-size: 20px;}
+.move li a p {font-size: 15px; font-weight: 300;}
+.move .campain {background:url(../img/bg_campain.jpg) no-repeat center/cover;}
+.move .pocarigirl {background: url(../img/bg_pocarigirl.jpg) no-repeat center/cover;}
+
+/*sub4_social*/
+.move {text-align: center; padding-top:200px }
+.move li {width: 50%; height:168px; float: left;}
+.move li a {display: block; padding-top: 65px; line-height:30px; color: #fff;}
+.move li a strong {font-size: 20px;}
+.move li a p {font-size: 15px; font-weight: 300;}
+.move .event {background:url(../img/bg_event.jpg) no-repeat center/cover;}
+.move .gallery {background: url(../img/bg_gallery.jpg) no-repeat center/cover;}
+
+
+
+/*footer영역*/
+.top {height: 320px; background: #282828;}
+.top .list {width:1200px; margin: 0 auto; padding-top: 75px;}
+.top .list > li {position: relative; width:110px; float: left; padding: 0 70px 0 20px;}
+.top .list > li:after {content: ""; position: absolute; top:0; right: 0; display: inline-block; width: 1px; height: 177px; background: rgba(96, 96, 96, 0.42);}
+.top .list > li:last-child:after {display: none;}
+.top .list > li strong {display: inline-block; color: #fff; font-family:'Roboto', sans-serif; font-size:14px; margin-bottom: 25px;}
+.top .list > li ul li {width:150px; font-size: 14px; color: #606060; line-height:26px;}
+.top .list > li ul li a:hover {border-bottom: 1px solid #606060;}
+.top .list > li ul li select {width:115px; height: 40px; background: #1c1c1c; border: none; color: #6a6a6a; text-indent: 8px;}
+
+/*address*/
+address {height: 50px; background: #141414; text-align: center; line-height: 50px; color: #525252; font-family:'Roboto', sans-serif; font-size: 15px; font-weight: 600;}
+
