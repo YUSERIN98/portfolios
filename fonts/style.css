@@ -1,0 +1,125 @@
+@font-face {
+	font-family: 'IBMPlexSansKR';
+	font-style: normal;
+	font-weight: 100;
+	font-display: swap;
+	src: local('IBMPlexSansKR-ExtraLight'),
+		url('IBMPlexSansKR/IBMPlexSansKR-ExtraLight.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'IBMPlexSansKR';
+	font-style: normal;
+	font-weight: 200;
+	font-display: swap;
+	src: local('IBMPlexSansKR-Thin'),
+		url('IBMPlexSansKR/IBMPlexSansKR-Thin.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'IBMPlexSansKR';
+	font-style: normal;
+	font-weight: 300;
+	font-display: swap;
+	src: local('IBMPlexSansKR-Light'),
+		url('IBMPlexSansKR/IBMPlexSansKR-Light.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'IBMPlexSansKR';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: local('IBMPlexSansKR-Regular'),
+		url('IBMPlexSansKR/IBMPlexSansKR-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'IBMPlexSansKR';
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: local('IBMPlexSansKR-Medium'),
+		url('IBMPlexSansKR/IBMPlexSansKR-Medium.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'IBMPlexSansKR';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: local('IBMPlexSansKR-Bold'),
+		url('IBMPlexSansKR/IBMPlexSansKR-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'GowunDodum';
+	font-style: normal;
+	font-weight: 300;
+	font-display: swap;
+	src: local('GowunDodum-Regular'),
+		url('GowunDodum/GowunDodum-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'NotoSansKR';
+	font-style: normal;
+	font-weight: 300;
+	font-display: swap;
+	src: local('NotoSansKR-Light'),
+		url('NotoSansKR/NotoSansKR-Light.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'NotoSansKR';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: local('NotoSansKR-Regular'),
+		url('NotoSansKR/NotoSansKR-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'NotoSansKR';
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: local('NotoSansKR-Medium'),
+		url('NotoSansKR/NotoSansKR-Medium.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'NotoSansKR';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: local('NotoSansKR-Bold'),
+		url('NotoSansKR/NotoSansKR-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'LuckiestGuy';
+	font-style: normal;
+	font-weight: 300;
+	font-display: swap;
+	src: local('LuckiestGuy-Regular'),
+		url('LuckiestGuy/LuckiestGuy-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Schoolbell';
+	font-style: normal;
+	font-weight: 300;
+	font-display: swap;
+	src: local('Schoolbell-Regular'),
+		url('Schoolbell/Schoolbell-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'DoHyeon';
+	font-style: normal;
+	font-weight: 300;
+	font-display: swap;
+	src: local('DoHyeon-Reular'),
+		url('DoHyeon-Reular/DoHyeon-Regular.ttf') format('truetype');
+}
