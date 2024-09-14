@@ -15,6 +15,8 @@ introMove.addEventListener('animationend', () => {
 
 
 
+
+
 // header scroll effect
 let lastScrollTop = 0;
 const menu = document.querySelector('.header');
