@@ -11,6 +11,11 @@ section .inner {
     width: 1080px;
     margin: 0 auto;
 }
+.section-sub-title {
+    font-size: 20vmin;
+    color: #F6B93A;
+    font-family: 'DoHyeon';
+}
 .bg-section {
     height: 100vh;
     background-color: #fff;
@@ -20,13 +25,6 @@ section .inner {
     transition: background 1s;
     font-family: 'GowunDodum';
 }
-.section-sub-title {
-    font-size: 20vmin;
-    color: #F6B93A;
-    font-family: 'DoHyeon';
-}
-
-
 
 
 /* header */
@@ -122,7 +120,6 @@ section .inner {
     color: #F6B93A;
     font-size: 8vmin;
     text-align: center;
-    /* mix-blend-mode: difference; */
     z-index: 2;
     opacity: 0;
     animation: introTitle 4.8s forwards;
@@ -217,7 +214,6 @@ section .inner {
     overflow: hidden;
 }
 .kvisual .kivisual-textWrap .title {
-    /* color: #f29422c2; */
     color: #F6B93A;
     font-size: 18vmin;
     font-family: "DoHyeon";
@@ -241,7 +237,6 @@ section .inner {
         opacity: 1;
     }
 }
-
 
 
 
@@ -337,7 +332,7 @@ section .inner {
 }
 
 
-/* work */
+/* works */
 .works .section-sub-title {
     position: absolute;
     right: 0;
