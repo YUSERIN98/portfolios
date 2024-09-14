@@ -16,24 +16,6 @@ $(document).ready(function(){
    $('header a').on('click',function(){
       $(this).addClass('turn_on').siblings().removeClass('turn_on'); 
    });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 });
 
 

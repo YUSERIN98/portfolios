@@ -20,9 +20,6 @@ section .inner {
     transition: background 1s;
     font-family: 'GowunDodum';
 }
-/* .bg-section + .bg-section {
-    padding-top: 100px;
-} */
 .section-sub-title {
     font-size: 20vmin;
     color: #F6B93A;
@@ -127,7 +124,9 @@ section .inner {
     text-align: center;
     /* mix-blend-mode: difference; */
     z-index: 2;
-    transform: translateY(40px);
+    opacity: 0;
+    animation: introTitle 4.8s forwards;
+    animation-delay: 0.5s;
 }
 .intro .intro__background {
     position: absolute;
@@ -140,11 +139,67 @@ section .inner {
 .intro .intro__background.intro__background--left {
     left: 0;
     transform-origin: left center;
+    animation: 
+        introBackgroundScaleX 0.5s ease-in-out 1.5s, 
+        introBackgroundScaleY 0.6s ease-in-out 2.5s;
+    animation-fill-mode: forwards;
 }
 .intro .intro__background.intro__background--right {
     left: 50%;
     transform-origin: right center;
+    animation: 
+        introBackgroundScaleX 0.5s ease-in-out 1.5s, 
+        introBackgroundScaleY 0.6s ease-in-out 2.5s;
+    animation-fill-mode: forwards;
 }
+
+
+@keyframes introTitle {
+    0% {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-60px);
+        opacity: 0;
+    }
+}
+
+
+@keyframes introBackgroundScaleX {
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes introBackgroundScaleY {
+    0% {
+        transform: scaleY(1);
+        transform-origin: top center;
+    }
+    100% {
+        transform: scaleY(0);
+        transform-origin: top center;
+    }
+}
+
+
+@keyframes introMove {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
 
 
 /* kvisual */
@@ -166,7 +221,25 @@ section .inner {
     color: #F6B93A;
     font-size: 18vmin;
     font-family: "DoHyeon";
-    transform: translateY(200px);
+}
+
+
+@keyframes kvisualTextMove {
+    0% {
+        letter-spacing: -1em;
+        -webkit-transform: translateZ(-1000px);
+                transform: translateZ(-1000px);
+        -webkit-filter: blur(15px);
+                filter: blur(15px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateZ(0);
+                transform: translateZ(0);
+        -webkit-filter: blur(0);
+                filter: blur(0);
+        opacity: 1;
+    }
 }
 
 
@@ -418,7 +491,7 @@ section .inner {
     100% {
       transform: translateX(0) rotate(-45deg);
     }
-  }
+}
 
 
 /* contact */

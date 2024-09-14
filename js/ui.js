@@ -1,3 +1,20 @@
+// intro
+const introMove = document.querySelector('.intro');
+const introTitle = document.querySelector('.intro .intro__title');
+const introkvisualTit = document.querySelector('.kvisual .kivisual-textWrap .title');
+
+introTitle.addEventListener('animationend', () => {
+    introMove.style.display = 'block'; // Show the element
+    introMove.style.animation = 'introMove 0.4s ease-in-out forwards'; // Start the second animation
+});
+
+introMove.addEventListener('animationend', () => {
+  introkvisualTit.style.display = 'block';
+  introkvisualTit.style.animation = 'kvisualTextMove 4s ease-in-out 1s forwards'; // Start the second animation
+});
+
+
+
 // header scroll effect
 let lastScrollTop = 0;
 const menu = document.querySelector('.header');

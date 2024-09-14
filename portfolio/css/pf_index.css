@@ -37,6 +37,7 @@ iframe {width: 100%; border: 20px solid #000; height: 780px; box-sizing: border-
     width: 100%;
     background: #fff;
     z-index: 150;
+    animation: introMove 0.5s ease-in-out 6s forwards;
 }
 .intro.porfolio01 {
     background-color: #298adb;
@@ -51,6 +52,7 @@ iframe {width: 100%; border: 20px solid #000; height: 780px; box-sizing: border-
     display: flex;
     width: 1080px;
     justify-content: space-between;
+    animation: introWrapFadeInOut 1s ease-in-out 5s forwards;
 }
 .intro .intro__wrap .intro__title p {
     color: #fff;
@@ -74,6 +76,26 @@ iframe {width: 100%; border: 20px solid #000; height: 780px; box-sizing: border-
 }
 .intro .intro__wrap .intro__partip span {
     display: block;
+}
+
+@keyframes introWrapFadeInOut {
+    0% {
+        transform: translateY(0); /* 중간 위치 */
+        opacity: 1; /* 완전히 보이는 상태 */
+    }
+    100% {
+        transform: translateY(-60px); /* 끝 위치 */
+        opacity: 0; /* 완전히 사라진 상태 */
+    }
+}
+
+@keyframes introMove {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
 }
 
 
