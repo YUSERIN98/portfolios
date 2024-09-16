@@ -285,7 +285,7 @@ section .inner {
     font-weight: 500;
 }
 .about .about-career-wrap {
-    background: #F8F1DE;
+    background: #f8f1de9c;
 }
 .about .about-career-wrap .about-desc {
     color: #F6B93A;
@@ -346,6 +346,7 @@ section .inner {
     align-items: center;
     text-align: center;
     font-size: 30px;
+    font-family: 'IBMPlexSansKR';
 }
 .skill .skill-wrap .skill-desc ul li dt {
     font-size: 45px;
