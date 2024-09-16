@@ -242,7 +242,10 @@ section .inner {
 
 
 /* about */
-.about .about-wrap {
+.about {
+    height: auto;
+}
+.about .about-visual-wrap {
     position: relative;
     width: 1080px;
     height: 100vh;
@@ -250,48 +253,71 @@ section .inner {
     background: url(../img/img-about-me.png) no-repeat center / 820px;
     background-attachment: fixed;
 }
-.about .about-wrap .section-sub-title {
+.about .about-visual-wrap .section-sub-title {
     position: absolute;
+    top: 40%;
     width: 100%;
-    height: 50%;
-    top: 10%;
+    text-align: center;
     z-index: 30;
 }
-.about .about-wrap .section-sub-title .title01 {
-    position: absolute;
-    left: -25%;
+.about .about-text-wrap {
+    background-color: #F6B93A;
 }
-.about .about-wrap .section-sub-title .title02 {
-    position: absolute;
-    right: 2%;
-    top: 20%;
-}
-.about .about-wrap .about-desc-wrap {
-    position: absolute;
-    z-index: 50;
-    width: auto;
+.about .about-text-wrap .about-desc, 
+.about .about-career-wrap .about-desc {
+    width: 1080px;
+    margin: 0 auto;
+    padding: 50px;
+    color: #fff;
+    font-family: 'IBMPlexSansKR';
+    
+} 
+.about .about-text-wrap .about-desc h3 {
     font-size: 28px;
-    font-family: 'GowunDodum';
-    padding: 35px;
+    margin-bottom: 30px;
+    font-weight: 700;
 }
-.about .about-wrap .about-desc-wrap.dw01 {
-    top: 40%;
-    left: -36%;
+.about .about-text-wrap .about-desc .desc-to-box {
+    display: flex;
+    font-size: 19px;
+    line-height: 30px;
+    justify-content: space-between;
+    font-weight: 500;
 }
-.about .about-wrap .about-desc-wrap.dw02 {
-    top: 50%;
-    right: -36%;
+.about .about-career-wrap {
+    background: #F8F1DE;
 }
-.about .about-wrap .about-desc-wrap h3 {
-    font-size: 36px;
+.about .about-career-wrap .about-desc {
+    color: #F6B93A;
 }
-.about .about-wrap .about-desc-wrap strong {
-    display: inline-block;
-    margin: 30px 0;
+.about .about-career-wrap .about-desc h3 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: 700;
 }
-.about .about-wrap .about-desc-wrap p {
-    line-height: 40px;
+.about .about-career-wrap .about-desc dl {
+    font-size: 19px;
+    line-height: 30px;
+    font-weight: 500;
 }
+.about .about-career-wrap .about-desc dl + dl {
+    margin-top: 30px;
+}
+.about .about-career-wrap .about-desc dl dt {
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.about .about-career-wrap .about-desc dl dt::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #F6B93A;
+}
+
 
 
 
@@ -523,6 +549,7 @@ section .inner {
 }
 .contact .contact-wrap .contact-info ul dl {
     display: flex;
+    font-family: 'IBMPlexSansKR';
 }
 .contact .contact-wrap .contact-info ul dl dt {
     margin-right: 38px;
