@@ -549,6 +549,9 @@ section .inner {
     font-size: 28px;
     width: 100%;
 }
+.contact .contact-wrap .contact-info ul li:first-child {
+    margin-top: -25px;
+}
 .contact .contact-wrap .contact-info ul li + li {
     margin-top: 40px;
 }
