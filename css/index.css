@@ -362,7 +362,6 @@ section .inner {
 }
 
 
-
 /* works */
 .works .section-sub-title {
     position: absolute;
@@ -567,6 +566,9 @@ section .inner {
     min-width: 130px;
     text-align: center;
 }
+
+
+
 
 
 
