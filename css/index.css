@@ -349,6 +349,10 @@ section .inner {
     font-size: 30px;
     font-family: 'IBMPlexSansKR';
 }
+.skill .skill-wrap .skill-desc ul li dl {
+    color: #F6B93A;
+    font-weight: 700;
+}
 .skill .skill-wrap .skill-desc ul li dt {
     font-size: 45px;
     margin-bottom: 20px;
@@ -540,8 +544,8 @@ section .inner {
 }
 .contact .contact-wrap .contact-info ul li {
     padding: 30px;
-    background: #ffffff4a;
-    border-bottom: 5px solid #ffffff4a;
+    /* background: #ffffff4a; */
+    border-bottom: 4px solid #ffffff4a;
     font-size: 28px;
     width: 100%;
 }
@@ -550,11 +554,18 @@ section .inner {
 }
 .contact .contact-wrap .contact-info ul dl {
     display: flex;
+    align-items: center;
     font-family: 'IBMPlexSansKR';
+    color: #ffffff8c;
+    font-weight: 700;
 }
 .contact .contact-wrap .contact-info ul dl dt {
     margin-right: 38px;
-    font-weight: 700;
+    padding: 10px;
+    background: #ffffff33;
+    border-radius: 10px;
+    min-width: 130px;
+    text-align: center;
 }
 
 
