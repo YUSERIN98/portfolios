@@ -362,7 +362,7 @@ section .inner {
 /* works */
 .works .section-sub-title {
     position: absolute;
-    right: 0;
+    right: 1%;
     bottom: 10%;
     writing-mode: vertical-rl;
 }
