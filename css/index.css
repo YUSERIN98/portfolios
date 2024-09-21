@@ -360,6 +360,7 @@ section .inner {
 }
 .skill .skill-wrap .skill-desc ul li dd {
     line-height: 38px;
+    font-weight: 500;
 }
 
 
